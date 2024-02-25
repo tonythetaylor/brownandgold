@@ -5,7 +5,7 @@ import Table, {
   AvatarCell,
   SelectColumnFilter,
   StatusPill,
-} from "../../components/tables/Table"; // new
+} from "../../components/tables/LeadershipTable"; // new
 import {data} from './data'
 
 const Leadership = () => {
@@ -22,11 +22,9 @@ const Leadership = () => {
         Header: "Title",
         accessor: "title",
       },
-      // {
-      //   Header: "Status",
-      //   accessor: "status",
-      //   Cell: StatusPill,
-      // },
+      {
+        accessor: "email",
+      },
       // {
       //   Header: "Age",
       //   accessor: "age",
