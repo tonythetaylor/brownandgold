@@ -1,4 +1,4 @@
-export const testimonialData = [
+export const data = [
     {
       id: 1,
       name: "Albert Hicks* Alpha-63 ",

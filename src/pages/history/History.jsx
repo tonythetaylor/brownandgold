@@ -1,9 +1,8 @@
 import React from "react";
-import Founders from "./Founders";
 import Testimonial from "../../components/testimonial/Testimonial";
 import FoundersHero from "./FoundersHero";
 import FoundersContext from "./FoundersContent";
-import Growth from "./Growth";
+import Founders from "./Founders";
 
 const History = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { testimonialData}  from './founders';
+import { data }  from './foundersData';
 
 const Founders = () => {
   var settings = {
@@ -27,7 +27,7 @@ const Founders = () => {
             className="grid grid-cols-1 max-w-screen-xl mx-auto gap-6"
           >
             <Slider {...settings}>
-              {testimonialData.map(({ id, name, text, img }) => {
+              {data.map(({ id, name, text, img }) => {
                 return (
                   <div key={id} className="my-6">
                     {/* card */}

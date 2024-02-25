@@ -5,7 +5,7 @@ const MobileDropdown = ({ submenus, dropdown, depthLevel }) => {
   const dropdownClass = depthLevel > 1 ? "dropdown-submenu" : "";
 
   return (
-    <ul className={`dropdown ${dropdownClass} ${dropdown ? "show" : "hidden"} dark:bg-[#403122]`}>
+    <ul className={`dropdown ${dropdownClass} ${dropdown ? "show" : "hidden"} dark:bg-[#403122] `}>
       {submenus.map((submenu, index) => (
         <MobileMenuItems items={submenu} key={index} depthLevel={depthLevel} />
       ))}
