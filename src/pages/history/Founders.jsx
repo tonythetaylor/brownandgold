@@ -31,7 +31,7 @@ const Founders = () => {
                 return (
                   <div key={id} className="my-6">
                     {/* card */}
-                    <div className="flex sm:flex-row gap-5 md:gap-14 p-4 mx-4 rounded-xl dark:bg-[#403122] bg-[#403122] relative">
+                    <div className="flex sm:flex-row gap-5 md:gap-14 p-4 mx-4 rounded-xl dark:bg-[#fffff4] bg-[#403122] relative">
                     {/* <div className="flex flex-col sm:flex-row gap-5 md:gap-14 p-4 mx-4 rounded-xl dark:bg-[#403122] bg-[#403122] relative"> */}
                       <img
                         src={img}
@@ -39,7 +39,7 @@ const Founders = () => {
                         className="block mx-auto h-[100px] w-full sm:w-[200px] object-cover"
                       />
                       <div className="space-y-4">
-                        <p className="text-white dark:text-white/80 xl:pr-40">
+                        <p className="text-[#fffff4] dark:text-[#403122] xl:pr-40">
                           “{text}”
                         </p>
                         <h1 className="text-xl font-bold  text-[#b58037]">{name}</h1>

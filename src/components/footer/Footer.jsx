@@ -53,7 +53,7 @@ const ResourcesLinks = [
 ];
 const Footer = () => {
   return (
-    <div className="bg-[#fffff4] dark:bg-[#403122] text-[#403122] dark:text-white backdrop-brightness-50">
+    <footer className="bg-[#fffff4] dark:bg-[#403122] text-[#403122] dark:text-[#fffff4]">
       <section className="container py-10">
         <div className=" grid md:grid-cols-3 py-5">
           {/* company Details */}
@@ -137,7 +137,7 @@ const Footer = () => {
           </div>
         </div>
       </section>
-    </div>
+    </footer>
   );
 };
 

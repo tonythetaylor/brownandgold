@@ -7,7 +7,7 @@ const LeadershipHero = () => {
   return (
     <>
       {/* <main className=" dark:text-white  text-[#403122] duration-300 mt-7 dark:mt-0 dark:p-7"> */}
-      <main className="mt-7  dark:text-[#403122]  text-[#403122] duration-300">
+      <main className="mt-7  dark:text-[#fffff4]  text-[#403122] duration-300">
 
         <div className="container">
           <h1 className="text-center text-3xl font-semibold sm:text-3xl text-[#b58037] dark:text-[#b58037] mb-7">

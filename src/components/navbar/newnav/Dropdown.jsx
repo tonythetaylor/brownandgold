@@ -5,7 +5,7 @@ const Dropdown = ({ submenus, dropdown, depthLevel }) => {
   const dropdownClass = depthLevel > 1 ? "dropdown-submenu" : "hidden";
 
   return (
-    <ul className={`dropdown ${dropdownClass} ${dropdown ? "show" : "hidden"} py-2 text-sm text-gray-700 dark:text-gray-200 dark:bg-[#403122]`}>
+    <ul className={`dropdown ${dropdownClass} ${dropdown ? "show" : "hidden"} py-2 text-sm text-gray-700 dark:text-gray-200 dark:bg-[#403122] border-[#fffff4]/35 border-2 drop-shadow-xl`}>
       {submenus.map((submenu, index) => (
         <MenuItems items={submenu} key={index} depthLevel={depthLevel} />
       ))}

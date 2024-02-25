@@ -98,6 +98,6 @@ export const menuItemsData = [
   },
   {
     title: "Contact Us",
-    url: "https://iotaphitheta.org/contact"
+    url: "contact"
   },
 ];

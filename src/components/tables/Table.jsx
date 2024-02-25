@@ -43,7 +43,7 @@ function GlobalFilter({
       <span className="text-[#403122]">Search: </span>
       <input
         type="text"
-        className="rounded-md border-[#403122] shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-[#403122] place-content-stretch placeholder-white placeholder:p-2 p-0.5"
+        className="rounded-md border-[#403122] shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-[#403122] place-content-stretch placeholder-white placeholder:p-2 p-0.5 dark:border-[#fffff4]/20 border-2"
         value={value || ""}
         onChange={(e) => {
           setValue(e.target.value);
@@ -75,7 +75,7 @@ export function SelectColumnFilter({
     <label className="flex gap-x-2 items-baseline py-4 justify-start">
       <span className="text-[#403122] ">{render("Header")}: </span>
       <select
-        className="rounded-md border-[#403122]  shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 text-[#fffff4] bg-[#403122] dark:text-[#fffff4] p-1 placeholder:p-2"
+        className="rounded-md border-[#403122]  shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 text-[#fffff4] bg-[#403122] dark:text-[#fffff4] p-1 placeholder:p-2 dark:border-[#fffff4]/20 border-2"
         name={id}
         id={id}
         value={filterValue}
@@ -112,7 +112,7 @@ export function SelectChapterTypeColumnFilter({
     <label className="flex gap-x-2 items-baseline py-4 justify-start">
       <span className=" text-[#403122] ">{render("Header")}: </span>
       <select
-        className="rounded-md border-[#403122]  shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 text-[#fffff4] bg-[#403122] dark:text-[#fffff4] p-1 placeholder:p-2"
+        className="rounded-md border-[#403122]  shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 text-[#fffff4] bg-[#403122] dark:text-[#fffff4] p-1 placeholder:p-2 dark:border-[#fffff4]/20 border-2"
         name={id}
         id={id}
         value={filterValue}
@@ -159,7 +159,7 @@ export function AvatarCell({ value, column, row }) {
         />
       </div>
       <div className="ml-4">
-        <div className="text-sm font-medium text-[#fffff4]">{value}</div>
+        <div className="text-sm font-medium text-[#fffff4] dark:text-[#403122]">{value}</div>
         <div className="text-sm text-[#b58037]">
           {row.original[column.emailAccessor]}
         </div>
@@ -228,15 +228,15 @@ function Table({ columns, data }) {
         )}
       </div>
       {/* table */}
-      <div className="mt-4 flex flex-col">
+      <div className="mt-4 flex flex-col dark:border-[#fffff4]/20 border-2 rounded-md">
         <div className="-my-2 overflow-x-auto -mx-4 sm:-mx-6 lg:-mx-8">
           <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-            <div className="shadow overflow-hidden border-b border-[#403122]  sm:rounded-lg">
+            <div className="shadow overflow-hidden border-b border-[#403122]  sm:rounded-lg ">
               <table
                 {...getTableProps()}
-                className="min-w-full divide-y divide-[#fffff4]/25 "
+                className="min-w-full divide-y divide-[#fffff4]/25 dark:divide-[#403122]/25"
               >
-                <thead className="bg-[#403122]">
+                <thead className="bg-[#403122] dark:bg-[#fffff4]">
                   {headerGroups.map((headerGroup) => (
                     <tr {...headerGroup.getHeaderGroupProps()}>
                       {headerGroup.headers.map((column) => (
@@ -244,7 +244,7 @@ function Table({ columns, data }) {
                         // we can add them into the header props
                         <th
                           scope="col"
-                          className="group px-6 py-3 text-left text-xs font-medium text-[#fffff4] uppercase tracking-wider"
+                          className="group px-6 py-3 text-left text-xs font-medium text-[#fffff4] dark:text-[#403122] uppercase tracking-wider"
                           {...column.getHeaderProps(
                             column.getSortByToggleProps()
                           )}
@@ -271,7 +271,7 @@ function Table({ columns, data }) {
                 </thead>
                 <tbody
                   {...getTableBodyProps()}
-                  className="bg-[#403122] divide-y divide-[#fffff4]/25 dark:text-[#fffff4] text-[#fffff4]"
+                  className="bg-[#403122] divide-y divide-[#fffff4]/25 dark:text-[#403122] text-[#fffff4] dark:bg-[#fffff4] dark:divide-[#403122]/25"
                 >
                   {page.map((row, i) => {
                     // new
@@ -328,14 +328,14 @@ function Table({ columns, data }) {
         </div>
         <div className="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
           <div className="flex gap-x-2 items-baseline">
-            <span className="text-sm text-[#403122]">
+            <span className="text-sm text-[#403122] dark:text-[#fffff4]">
               Page <span className="font-medium">{state.pageIndex + 1}</span> of{" "}
               <span className="font-medium">{pageOptions.length}</span>
             </span>
             <label>
               <span className="sr-only">Items Per Page</span>
               <select
-                className="mt-1 block w-full rounded-md border-[#403122] shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 dark:text-[#fffff4] text-[#fffff4] bg-[#403122]"
+                className="mt-1 block w-full rounded-md border-[#403122] shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 dark:text-[#fffff4] text-[#fffff4] bg-[#403122] dark:border-[#fffff4]/20 border-2"
                 value={state.pageSize}
                 onChange={(e) => {
                   setPageSize(Number(e.target.value));
@@ -359,7 +359,7 @@ function Table({ columns, data }) {
                 onClick={() => gotoPage(0)}
                 disabled={!canPreviousPage}
               >
-                <span className="sr-only">First</span>
+                <span className="sr-only ">First</span>
                 <ChevronDoubleLeftIcon
                   className="h-5 w-5 text-[#b58037] "
                   aria-hidden="true"
