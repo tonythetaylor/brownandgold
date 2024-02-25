@@ -38,7 +38,7 @@ const Testimonial = () => {
   };
   return (
     <>
-      <div className="py-10">
+      <div className="py-10 dark:bg-[#fffff4]">
         <div className="container">
           {/* testimonial section */}
           <div

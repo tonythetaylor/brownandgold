@@ -7,8 +7,8 @@ import B5 from '../../assets/brands/brand5.png'
 import B6 from '../../assets/brands/brand6.png'
 const BrandLogo = () => {
   return (
-    <>
-<div className='container my-12'>
+    <div className='dark:bg-[#fffff4]'>
+<div className='container my-12 '>
 <h1 className='text-center text-3xl font-semibold sm:text-3xl text-[#b58037] dark:text-[#403122]'>Thank You To Our National Sponsors</h1>
 {/* <h1
               data-aos="fade-up"
@@ -26,7 +26,7 @@ const BrandLogo = () => {
 </div>
 </div>
 
-    </>
+    </div>
   )
 }
 
