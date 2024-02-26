@@ -40,7 +40,7 @@ function GlobalFilter({
 
   return (
     <label className="flex gap-x-2 items-baseline py-4 justify-start">
-      <span className="text-[#403122] dark:text-[#fffff4]">Search: </span>
+      <span className="text-[#fffff4] dark:text-[#fffff4]">Search: </span>
       <input
         type="text"
         className="rounded-md border-[#403122] shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-[#403122] place-content-stretch placeholder-white placeholder:p-2 p-0.5 dark:border-[#fffff4]/20 border-2"
