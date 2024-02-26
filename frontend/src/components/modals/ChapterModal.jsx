@@ -31,7 +31,7 @@ const Modal = ({ isOpen, closeModal, data }) => {
   }
   return (
     <div className="fixed inset-0 flex left-0 top-0 w-full h-screen items-center justify-center backdrop-blur-md overflow-hidden overflow-y-hidden z-50">
-      <div ref={modalRef} className="container h-3/4 bg-[#fffff4] p-4 rounded-lg shadow-lg ">
+      <div ref={modalRef} className="container bg-[#fffff4] p-4 rounded-lg shadow-lg ">
         <h2 className="text-2xl font-bold mb-4 text-[#403122]">{data.Name}</h2>
         {/* <ModalForm /> */}
         {/* <>
@@ -43,7 +43,7 @@ const Modal = ({ isOpen, closeModal, data }) => {
           <div>{data.ChapterDesignation}</div>
         </> */}
         <HeroModal  name={data.name} region={data.Region} email={data.Email} type={data.Chapter_Type} designation={data.ChapterDesignation} />
-        <SimpleMap />
+        {/* <SimpleMap /> */}
         <div className="mt-4 flex justify-end bottom-0">
           <button
             onClick={closeModal}

@@ -2,6 +2,7 @@ import React from "react";
 import HeroImg from "../../assets/hero.png";
 import { Link } from "react-router-dom";
 import GoogleMapReact from 'google-map-react';
+import SimpleMap from "../maps/SimpleMap";
 // AIzaSyCrbmch8EYZaKW1wJNGdmv3Jc1t2CVDKMI
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -15,8 +16,9 @@ const HeroModal = ({region, email, type, designation}) => {
       };
   return (
     <> 
-      <main className="dark:bg-[#403122] dark:text-white  text-[#403122] duration-300">
-        <div className="container flex flex-col mt-0 sm:mt-0 items-center">
+      <main className="dark:bg-[#403122] dark:text-white  text-[#403122] duration-300;
+">
+        <div className="container flex flex-col mt-0 sm:mt-0 items-center h-[200px]">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 place-items-center ">
             {/* Image section   */}
             {/* <div data-aos="zoom-in" className="order-2 sm:order-2 h-3/4 w-full sm:h-full"> */}
@@ -87,6 +89,7 @@ const HeroModal = ({region, email, type, designation}) => {
             </div>
           </div>
         </div>
+        <SimpleMap />
       </main>
     </>
   );

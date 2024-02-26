@@ -6,7 +6,7 @@ import Table, {
   SelectColumnFilter,
   SelectChapterTypeColumnFilter,
   StatusPill,
-} from "../../components/tables/ChapterTable"; // new
+} from "../../components/tables/Table"; // new
 import { chapters } from './data/Iota_Phi_Theta_Chapters-2/chapters'
 
 const ChapterLocator = () => {
