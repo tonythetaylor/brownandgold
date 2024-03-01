@@ -34,7 +34,7 @@ const HeroModal = ({name, title, role, email}) => {
             <div className=" space-y-5 order-1 sm:order-1 xl:pr-40 py-4">
             <h1
               data-aos="fade-up"
-              className="text-sm sm:text-xl font-semibold"
+              className="text-sm sm:text-xl font-semibold text-[#fffff4]"
               style={{ lineHeight: 1.2 }}
             >
                 Name: {" "}
@@ -43,7 +43,7 @@ const HeroModal = ({name, title, role, email}) => {
 
               <h1
               data-aos="fade-up"
-              className="text-sm sm:text-xl font-semibold"
+              className="text-sm sm:text-xl font-semibold text-[#fffff4]"
               style={{ lineHeight: 1.2 }}
             >
                 Title: {" "}
@@ -52,7 +52,7 @@ const HeroModal = ({name, title, role, email}) => {
 
               <h1
               data-aos="fade-up"
-              className="text-sm sm:text-xl font-semibold"
+              className="text-sm sm:text-xl font-semibold text-[#fffff4]"
               style={{ lineHeight: 1.2 }}
             >
                 {/* ABOUT{" "}<span className=" text-yellow-500"> IOTA PHI THETA </span> */}
@@ -62,7 +62,7 @@ const HeroModal = ({name, title, role, email}) => {
 
               <h1
               data-aos="fade-up"
-              className="text-sm sm:text-xl font-semibold"
+              className="text-sm sm:text-xl font-semibold text-[#fffff4]"
               style={{ lineHeight: 1.2 }}
             >
                 {/* ABOUT{" "}<span className=" text-yellow-500"> IOTA PHI THETA </span> */}
